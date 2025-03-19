@@ -1,0 +1,3 @@
+tensorlow
+numpy
+streamlit
