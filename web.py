@@ -31,7 +31,7 @@ app_mode = st.sidebar.radio("📌 Select Page", ["🏠 Home", "🔬 Disease Reco
 # 📌 Home Page
 if app_mode == "🏠 Home":
     st.markdown("<h1 style='text-align: center;'>🌱 PLANT DISEASE RECOGNITION SYSTEM 🔍</h1>", unsafe_allow_html=True)
-    st.image("https://source.unsplash.com/800x400/?plant,leaves", use_column_width=True)
+    st.image("https://source.unsplash.com/800x400/?plant,leaves", use_container_width=True)
 
     st.markdown("""
     ### 🌟 Welcome to the Plant Disease Recognition System!
@@ -64,7 +64,7 @@ elif app_mode == "🔬 Disease Recognition":
 
         # If image is uploaded, display it
         if "uploaded_image" in st.session_state:
-            st.image(st.session_state["uploaded_image"], caption="Uploaded Image", use_column_width=True)
+            st.image(st.session_state["uploaded_image"], caption="Uploaded Image", use_container_width=True)
 
     with col2:
         if st.button("🚀 Predict") and "uploaded_image" in st.session_state:
