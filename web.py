@@ -85,16 +85,16 @@ elif app_mode == "🔬 Disease Recognition":
                     st.success(f"🌿 Your plant is **Healthy**! Good job! 🍃✅ (Confidence: {confidence:.2%})")
                 else:
                     st.warning(f"⚠️ The plant shows signs of **{disease}**. Please take action! 🚨 (Confidence: {confidence:.2%})")
-                        if disease == "Anthracnose(leaf)" or "Anthracnose(fruit)":
-                            st.info("""Treatment & Management:
+                    if disease == "Anthracnose(leaf)" or "Anthracnose(fruit)":
+                         st.info("""Treatment & Management:
 
-                                        ✅ Fungicides:
+                                    ✅ Fungicides:
 
-                                        •Spray copper-based fungicides (e.g., Copper oxychloride, Bordeaux mixture, Antracol) at the flowering stage.
+                                    •Spray copper-based fungicides (e.g., Copper oxychloride, Bordeaux mixture, Antracol) at the flowering stage.
 
-                                        •Use systemic fungicides like Carbendazim, Thiophanate-methyl, or Azoxystrobin during fruit development.
+                                    •Use systemic fungicides like Carbendazim, Thiophanate-methyl, or Azoxystrobin during fruit development.
 
-                                        •Apply Chlorothalonil or Mancozeb at early flowering and fruit set stages.""")
+                                    •Apply Chlorothalonil or Mancozeb at early flowering and fruit set stages.""")
 
             # Show Class Probabilities
             st.subheader("📊 Confidence Scores:")
