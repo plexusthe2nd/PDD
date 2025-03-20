@@ -34,7 +34,7 @@ if app_mode == "🏠 Home":
     st.image("https://source.unsplash.com/800x400/?plant,leaves", use_container_width=True)
 
     st.markdown("""
-    ### 🌟 Welcome to the Mango Disease Recognition System!
+    ### 🌟 Welcome to the Mangoes Disease Recognition System!
     Our mission is to help **farmers & researchers** detect plant diseases with **AI-powered image recognition**.  
 
     🔹 **How It Works:**  
