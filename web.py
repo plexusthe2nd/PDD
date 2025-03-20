@@ -74,7 +74,7 @@ elif app_mode == "🔬 Disease Recognition":
             result_index, confidence, all_probs = model_prediction(st.session_state["uploaded_image"])
 
             # Disease Labels (Make Sure This Matches Your Training Order!)
-            class_name = ['Powdery mildew', 'Healthy', 'Anthracnose', 'Anthracnose', 'Healthy']
+            class_name = ['Anthracnose(fruit)', 'Healthy(fruit)', 'Anthracnose(leaf)', 'Powdery Mildew', 'Healthy']
 
             # Confidence Threshold Check
             if confidence < 0.5:  # Less than 50% confidence → Not a mango leaf
