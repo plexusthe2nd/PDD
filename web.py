@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 
 # 🌱 Page Config
-st.set_page_config(page_title="Plant Disease Recognition", page_icon="🌿", layout="wide")
+st.set_page_config(page_title="Mango Disease Recognition", page_icon="🌿", layout="wide")
 
 # 🧠 Load Model
 @st.cache_resource
@@ -30,11 +30,11 @@ app_mode = st.sidebar.radio("📌 Select Page", ["🏠 Home", "🔬 Disease Reco
 
 # 📌 Home Page
 if app_mode == "🏠 Home":
-    st.markdown("<h1 style='text-align: center;'>🌱 PLANT DISEASE RECOGNITION SYSTEM 🔍</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>🌱 MANGO DISEASE RECOGNITION SYSTEM 🔍</h1>", unsafe_allow_html=True)
     st.image("https://source.unsplash.com/800x400/?plant,leaves", use_container_width=True)
 
     st.markdown("""
-    ### 🌟 Welcome to the Plant Disease Recognition System!
+    ### 🌟 Welcome to the Mango Disease Recognition System!
     Our mission is to help **farmers & researchers** detect plant diseases with **AI-powered image recognition**.  
 
     🔹 **How It Works:**  
