@@ -86,9 +86,7 @@ elif app_mode == "🔬 Disease Recognition":
                 else:
                     st.warning(f"⚠️ The plant shows signs of **{disease}**. Please take action! 🚨 (Confidence: {confidence:.2%})")
                     if disease == "Anthracnose(leaf)" or "Anthracnose(fruit)":
-                         st.info("""Treatment & Management:
-
-                                    ✅ Fungicides:
+                         st.info(  """Treatment & Management:
 
                                     •Spray copper-based fungicides (e.g., Copper oxychloride, Bordeaux mixture, Antracol) at the flowering stage.
 
