@@ -85,9 +85,19 @@ elif app_mode == "🔬 Disease Recognition":
                     st.success(f"🌿 Your plant is **Healthy**! Good job! 🍃✅ (Confidence: {confidence:.2%})")
                 else:
                     st.warning(f"⚠️ The plant shows signs of **{disease}**. Please take action! 🚨 (Confidence: {confidence:.2%})")
+                        if disease == "Anthracnose":
+                            st.info("""Treatment & Management:
+
+                                        ✅ Fungicides:
+
+                                        •Spray copper-based fungicides (e.g., Copper oxychloride, Bordeaux mixture, Antracol) at the flowering stage.
+
+                                        •Use systemic fungicides like Carbendazim, Thiophanate-methyl, or Azoxystrobin during fruit development.
+
+                                        •Apply Chlorothalonil or Mancozeb at early flowering and fruit set stages.""")
 
             # Show Class Probabilities
             st.subheader("📊 Confidence Scores:")
             for i, prob in enumerate(all_probs):
                 st.write(f"🔹 {class_name[i]}: **{prob:.4f}**")
-
+          
